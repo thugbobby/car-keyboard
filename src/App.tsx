@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import react, { useState } from 'react'
+import { Input} from 'antd'
+import CarNum from './CarKeyboard'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+    const [showCarKeyboard, setShowCarKeyboard] = useState(false);
+    const [carNumber, setCarNumber] = useState('');
+
+    return (
+        <div style={{ width: '500px' }}>
+            <Input readOnly value={carNumber} placeholder={"点击输入车牌号码"} width={"100%"} size={"large"} onClick={()=>{setShowCarKeyboard(true)}}/>
+            <CarNum showCarKeyboard={showCarKeyboard} setShowCarKeyboard={setShowCarKeyboard} carNumber={carNumber} setCarNumber={setCarNumber} />
+        </div>
+    )
 }
 
-export default App;
+export default App

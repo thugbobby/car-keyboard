@@ -1,0 +1,38 @@
+.car {
+    .ant-btn {
+        font-size: 30px;
+        line-height: 0.715;
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.car-input {
+    .ant-input-lg {
+        font-size: 22px;
+    }
+    .ant-btn {
+        font-size: 28px;
+        line-height: 0.715;
+        height: 60px;
+        width: 60px;
+    }
+    .ant-col-3{
+        max-width: 9.5%;
+    }
+}
+.car-modal{
+    .ant-modal-close-x {
+        font-size: 28px;
+    }
+}
+
+.car-energy{
+    .ant-btn{
+        height: 60px;
+        font-size: 52px;
+        padding: 0px 5px 0px 5px;
+        line-height: 0.715;
+        color: '#ffffff'
+    }
+}
