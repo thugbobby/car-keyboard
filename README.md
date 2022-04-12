@@ -6,7 +6,7 @@ React Hook + Antd 实现的车牌键盘。
 
 ## Description
 
-- 基于Antd + React Hooks实现的车牌键盘，支持新能源规则。
+- 基于Antd + React Hook + Typescript 实现的车牌键盘，支持新能源规则。
 - 省份 + 字母（无 I/O）/ 数字 + [港澳学警领]
 
 ## Installation
